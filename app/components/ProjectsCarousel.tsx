@@ -20,10 +20,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   return (
     <section className="embla">
       <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+        <div className="embla__container ">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number shadow-sm">
+              <div
+                className="embla__slide__number shadow-sm"
+                style={{ background: 'var(--background-gradient)' }}
+              >
                 <ProjectsCarouselSlide index={index} />
               </div>
             </div>

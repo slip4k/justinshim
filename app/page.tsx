@@ -1,3 +1,4 @@
+import Contact from './components/Contact';
 import Landing from './components/Landing';
 import Projects from './components/Projects';
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
       <Landing />
       <Projects />
+      <Contact />
     </main>
   );
 }

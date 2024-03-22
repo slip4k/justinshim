@@ -46,7 +46,7 @@ export default function ContactForm() {
     <>
       {isLoading === 'presubmit' ? (
         <form
-          className="flex flex-col gap-y-4 rounded-md p-6 w-[90dvw] mt-10"
+          className="flex flex-col gap-y-4 rounded-md p-6 md:w-[30dvw] w-[90dvw] mt-10"
           onSubmit={handleSubmit}
         >
           <input

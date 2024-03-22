@@ -6,25 +6,29 @@ export default function Landing() {
   return (
     <>
       <div className="flex flex-col items-center h-[100dvh] relative">
-        <div className="transform-gpu absolute top-36 -z-10 left-4 w-80 h-80 bg-[#00539CFF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
-        <div className="transform-gpu absolute bottom-36 -z-10 left-4 w-72 h-72 bg-[#FFD662FF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
         <NavBar />
+        <div className="transform-gpu absolute top-12 md:top-24 -z-10 sm:left-[40dvw] left-4 w-80 h-80 bg-[#00539CFF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
+        <div className="transform-gpu absolute bottom-56 md:bottom-72 -z-10 sm:left-[40dvw] left-4 w-72 h-72 bg-[#FFD662FF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
         <Image
-          className="rounded-full shadow-lg border-2 mt-[5dvh] mb-6"
+          className="rounded-full shadow-lg border-2 mt-[5dvh] mb-6 -z-10"
           src="/headshot.jpg"
           width={230}
           height={230}
           alt="Headshot of Justin Shim"
         />
-        <h2 className="font-extrabold text-4xl drop-shadow-md">Justin Shim</h2>
-        <h1 className="font-extrabold text-5xl drop-shadow-md mb-2 ml-5 ease-in-out transition-transform">
-          <Typewriter />
-        </h1>
-        <p className="mx-4 font-light text-2xl text-center">
-          I build products in search of three principles: aesthetics,
-          functionality, and scalability
-        </p>
-        <div className="flex w-[60dvw] justify-between ml-6 my-6">
+        <div className="flex flex-col text-center w-full">
+          <h2 className="font-extrabold text-4xl drop-shadow-md">
+            Justin Shim
+          </h2>
+          <h1 className="font-extrabold text-5xl drop-shadow-md mb-2 ml-5 ease-in-out transition-transform">
+            <Typewriter />
+          </h1>
+          <p className="mx-4 font-light text-2xl text-center">
+            I build products in search of three principles: aesthetics,
+            functionality, and scalability
+          </p>
+        </div>
+        <div className="flex w-[60dvw] justify-between sm:justify-evenly md:justify-center md:gap-x-6 ml-6 my-6">
           <a
             href="#projects"
             className="bg-black text-white rounded-3xl py-2 px-4"
@@ -38,7 +42,7 @@ export default function Landing() {
             Contact Me
           </a>
         </div>
-        <div className="flex w-[35dvw] justify-between">
+        <div className="flex w-[35dvw] justify-between sm:justify-evenly md:justify-center md:gap-x-6">
           <a className="hover:scale-125" href="https://github.com/slip4k">
             <Image
               src="/github.png"

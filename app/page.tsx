@@ -1,5 +1,6 @@
 import Contact from './components/Contact';
 import Landing from './components/Landing';
+import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 
 export default function Home() {

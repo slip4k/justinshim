@@ -23,17 +23,13 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container ">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div
-                className="embla__slide__number shadow-sm"
-                style={{ background: 'var(--background-gradient)' }}
-              >
+              <div className="embla__slide__number shadow-sm bg-slate-100">
                 <ProjectsCarouselSlide index={index} />
               </div>
             </div>
           ))}
         </div>
       </div>
-
       <div className="embla__controls mt-6">
         <div className="embla__dots gap-x-2">
           {scrollSnaps.map((_, index) => (

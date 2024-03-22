@@ -46,11 +46,11 @@ export default function ContactForm() {
     <>
       {isLoading === 'presubmit' ? (
         <form
-          className="flex flex-col gap-y-4 border rounded-md p-6 w-[90dvw] mt-10"
+          className="flex flex-col gap-y-4 rounded-md p-6 w-[90dvw] mt-10"
           onSubmit={handleSubmit}
         >
           <input
-            className="bg-gray-200 drop-shadow-md appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-50 focus:border-blue-200"
+            className="bg-slate-100/80 drop-shadow-md appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-50 focus:border-blue-200"
             type="text"
             name="name"
             placeholder="Name"
@@ -59,7 +59,7 @@ export default function ContactForm() {
             onChange={(e) => setName(e.target.value)}
           />
           <input
-            className="bg-gray-200 drop-shadow-md appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-50 focus:border-blue-200"
+            className="bg-slate-100/80 drop-shadow-md appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-50 focus:border-blue-200"
             type="text"
             name="email"
             placeholder="Email"
@@ -68,7 +68,7 @@ export default function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
-            className="bg-gray-200 drop-shadow-md appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-50 focus:border-blue-200"
+            className="bg-slate-100/80 drop-shadow-md appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-50 focus:border-blue-200"
             type="text"
             name="subject"
             placeholder="Subject"
@@ -77,7 +77,7 @@ export default function ContactForm() {
             onChange={(e) => setSubject(e.target.value)}
           />
           <textarea
-            className="bg-gray-200 drop-shadow-md appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-50 focus:border-blue-200"
+            className="bg-slate-100/80 drop-shadow-md appearance-none border-2 border-gray-300 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-slate-50 focus:border-blue-200"
             cols={1}
             rows={5}
             name="message"

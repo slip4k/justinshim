@@ -5,7 +5,9 @@ import Typewriter from './Typewriter';
 export default function Landing() {
   return (
     <>
-      <div className="flex flex-col items-center h-[100dvh]">
+      <div className="flex flex-col items-center h-[100dvh] relative">
+        <div className="transform-gpu absolute top-36 -z-10 left-4 w-80 h-80 bg-[#00539CFF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
+        <div className="transform-gpu absolute bottom-36 -z-10 left-4 w-72 h-72 bg-[#FFD662FF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
         <NavBar />
         <Image
           className="rounded-full shadow-lg border-2 mt-[5dvh] mb-6"

@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Projects() {
   const slides = [0, 1, 2];
   return (
-    <div id="projects" className="flex flex-col h-[150dvh] relative">
+    <div id="projects" className="flex flex-col h-[130dvh] relative">
       <Image
         className="absolute md:left-[10dvw] top-12 filter blur-sm"
         src="/nextlogo.png"

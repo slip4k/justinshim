@@ -1,8 +1,4 @@
-const URL = 'https://www.justinshim.com';
 module.exports = {
-  siteUrl: URL,
+  siteUrl: 'https://www.justinshim.com',
   generateRobotsTxt: true,
-  robotsTxtOptions: {
-    policies: [{ userAgent: '*', allow: '/' }],
-  },
 };

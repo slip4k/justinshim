@@ -5,27 +5,31 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
-  // const menuRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handler = (e: any) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
 
-  // useEffect(() => {
-  //   // const handler = (e: MouseEvent) => {
-  //   //   if (!menuRef.current || !menuRef.current.contains(e.target as Node)) {
-  //   //     setOpen(false);
-  //   //   }
-  //   // };
-  //   // document.addEventListener('mousedown', handler);
-  // }, []);
+    return () => {
+      document.removeEventListener('mousedown', handler);
+    };
+  }, []);
 
   return (
     <nav className="flex sticky top-0 sm:px-12 lg:px-24 justify-between items-center w-[100dvw] mb-8 bg-slate-100/80 z-10  drop-shadow-md">
       <div className="font-black text-5xl m-6">js</div>
-      <div className="m-6 relative" id="dropdown">
-        <Menu
-          className="hover:cursor-pointer z-10"
-          onClick={() => setOpen(!open)}
-          color="#000000"
-          size={36}
-        />
+      <div className="m-6 relative" id="dropdown" ref={menuRef}>
+        <button onClick={() => setOpen(!open)}>
+          <Menu
+            className="hover:cursor-pointer z-10"
+            color="#000000"
+            size={36}
+          />
+        </button>
         <AnimatePresence>
           {open && (
             <motion.div

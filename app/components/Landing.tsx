@@ -16,7 +16,7 @@ export default function Landing() {
           height={230}
           alt="Headshot of Justin Shim"
         />
-        <div className="flex flex-col text-center w-full">
+        <div className="flex flex-col text-center w-full lg:w-[30dvw]">
           <h2 className="font-extrabold text-4xl drop-shadow-md">
             Justin Shim
           </h2>

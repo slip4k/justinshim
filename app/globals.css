@@ -8,7 +8,12 @@
   --background-end-rgb: 255, 255, 255;
   --color-side: 192, 192, 192;
   --color-middle: 255, 255, 255;
-  --background-gradient: linear-gradient(to right, #c0c0c0, #ffffff);
+  --background-gradient: linear-gradient(
+    to right,
+    rgb(var(--color-side)),
+    rgb(var(--color-middle)),
+    rgb(var(--color-side))
+  );
 }
 
 @media (prefers-color-scheme: dark) {

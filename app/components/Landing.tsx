@@ -23,26 +23,39 @@ export default function Landing() {
           functionality, and scalability
         </p>
         <div className="flex w-[60dvw] justify-between ml-6 my-6">
-          <button className="bg-black text-white rounded-3xl py-2 px-4">
+          <a
+            href="#projects"
+            className="bg-black text-white rounded-3xl py-2 px-4"
+          >
             Projects
-          </button>
-          <button className="bg-black text-white rounded-3xl py-2 px-4">
+          </a>
+          <a
+            href="#contact"
+            className="bg-black text-white rounded-3xl py-2 px-4"
+          >
             Contact Me
-          </button>
+          </a>
         </div>
         <div className="flex w-[35dvw] justify-between">
-          <Image
-            src="/github.png"
-            height={48}
-            width={48}
-            alt="Github Logo that Leads to the profile of Justin Shim"
-          />
-          <Image
-            src="/linkedin.png"
-            height={48}
-            width={48}
-            alt="LinkedIn Logo that Leads to the profile of Justin Shim"
-          />
+          <a className="hover:scale-125" href="https://github.com/slip4k">
+            <Image
+              src="/github.png"
+              height={48}
+              width={48}
+              alt="Github Logo that Leads to the profile of Justin Shim"
+            />
+          </a>
+          <a
+            className="hover:scale-125"
+            href="https://www.linkedin.com/in/justinshim/"
+          >
+            <Image
+              src="/linkedin.png"
+              height={48}
+              width={48}
+              alt="LinkedIn Logo that Leads to the profile of Justin Shim"
+            />
+          </a>
         </div>
       </div>
     </>

@@ -8,7 +8,7 @@ export default function Landing() {
       <div className="flex flex-col items-center h-[100dvh]">
         <NavBar />
         <Image
-          className="rounded-full shadow-lg border-2 mt-[7dvh] mb-6"
+          className="rounded-full shadow-lg border-2 mt-[5dvh] mb-6"
           src="/headshot.jpg"
           width={230}
           height={230}

@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Projects() {
   const slides = [0, 1, 2];
   return (
-    <div id="projects" className="flex flex-col h-[100dvh] mt-12">
+    <div id="projects" className="flex flex-col h-[130dvh] mt-36 relative">
       <Image
         className="absolute md:left-[10dvw] top-12 filter blur-sm"
         src="/nextlogo.png"
@@ -27,8 +27,10 @@ export default function Projects() {
         alt="Next.js logo"
       />
 
-      <h1 className="text-center font-black text-6xl mb-6">Projects</h1>
-      <div>
+      <h1 className="text-center sticky top-0 font-black text-6xl mb-6">
+        Projects
+      </h1>
+      <div className="sticky top-20">
         <ProjectsCarousel slides={slides}></ProjectsCarousel>
       </div>
     </div>

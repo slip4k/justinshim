@@ -20,7 +20,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className="flex sm:px-12 lg:px-24 justify-between items-center w-[100dvw] mb-8 bg-slate-100/80 z-10  drop-shadow-md">
+    <nav className="flex sticky top-0 sm:px-12 lg:px-24 justify-between items-center w-[100dvw] mb-8 bg-slate-100/80 z-10  drop-shadow-md">
       <div className="font-black text-5xl m-6">js</div>
       <div className="m-6 relative" id="dropdown" ref={menuRef}>
         <button onClick={() => setOpen(!open)}>

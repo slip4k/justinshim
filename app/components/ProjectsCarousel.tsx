@@ -23,7 +23,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container ">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number shadow-sm bg-slate-100/80">
+              <div className="embla__slide__number shadow-sm bg-neutral-200">
                 <ProjectsCarouselSlide index={index} />
               </div>
             </div>

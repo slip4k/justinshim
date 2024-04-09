@@ -18,7 +18,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
     useDotButton(emblaApi);
 
   return (
-    <section className="embla md:w-[50dvw]">
+    <section className="embla md:w-[30dvw] ">
       <div className="embla__viewport " ref={emblaRef}>
         <div className="embla__container ">
           {slides.map((index) => (

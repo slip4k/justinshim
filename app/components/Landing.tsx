@@ -10,7 +10,7 @@ export default function Landing() {
         <div className="transform-gpu absolute top-12 md:top-24 -z-10 sm:left-[40dvw] left-4 w-80 h-80 bg-[#00539CFF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
         <div className="transform-gpu absolute bottom-56 md:bottom-72 -z-10 sm:left-[40dvw] left-4 w-72 h-72 bg-[#FFD662FF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
         <Image
-          className="rounded-full shadow-lg border-2 mt-[5dvh] mb-6 -z-10"
+          className="rounded-full shadow-lg border-2 mt-12 mb-6 -z-10"
           src="/headshot.jpg"
           width={230}
           height={230}

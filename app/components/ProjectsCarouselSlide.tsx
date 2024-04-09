@@ -8,7 +8,7 @@ export default function ProjectCarouselSlide({ index }: { index: number }) {
       image: '/creatorcards.png',
       description:
         'Creator Cards is an influencer platform for no-code landing pages with deep customization and a familiar interface',
-      website: 'No URL for now',
+      website: 'https://creatorcards.us/',
     },
     {
       title: 'Next Engine Optimization',
@@ -34,9 +34,9 @@ export default function ProjectCarouselSlide({ index }: { index: number }) {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-y-4">
+    <div className="flex flex-col justify-center items-center gap-y-4 md:gap-y-8">
       <h1 className="text-3xl text-center font-bold">{project.title}</h1>
-      <div >
+      <div>
         <Image
           className="rounded-lg shadow-lg border-8 transform-gpu rotate-[17deg] border-black my-6"
           src={project.image}

@@ -81,7 +81,7 @@ export default function Landing() {
         </div>
       </div>
       <h1 className="font-bold text-4xl text-center mb-8">Skills</h1>
-      <div className="flex w-[4000px] h-full  font-bold mt-2 mb-2 overflow-hidden">
+      <div className="flex items-center md:w-[4000px] h-full  font-bold mt-2 mb-2 overflow-hidden">
         <div className="flex items-center animate-loop-scroll whitespace-nowrap">
           {logos.map((logo, index) => {
             return (
@@ -93,7 +93,7 @@ export default function Landing() {
           })}
         </div>
         <div
-          className="flex animate-loop-scroll whitespace-nowrap"
+          className="flex items-center animate-loop-scroll whitespace-nowrap"
           aria-hidden="true"
         >
           {logos.map((logo, index) => {

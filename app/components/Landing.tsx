@@ -3,6 +3,14 @@ import Image from 'next/image';
 import Typewriter from './Typewriter';
 
 export default function Landing() {
+  const logos = [
+    '/tscolorlogo.png',
+    '/nextcirclelogo.png',
+    '/reactcolorlogo.png',
+    '/gitlogo.png',
+    '/prismalogo.png',
+    '/tailwindlogo.png',
+  ];
   return (
     <>
       <div className="flex flex-col items-center h-[100dvh] relative">
@@ -62,6 +70,37 @@ export default function Landing() {
               alt="LinkedIn Logo that Leads to the profile of Justin Shim"
             />
           </a>
+        </div>
+      </div>
+      <div className="flex lg:w-[50dvw] h-full w-[100dvw] font-bold mt-2 mb-2 overflow-hidden">
+        <div className="flex animate-loop-scroll whitespace-nowrap">
+          {logos.map((logo, index) => {
+            return (
+              <Image
+                src={logo}
+                alt="logo image"
+                width={409}
+                height={250}
+                key={index}
+              />
+            );
+          })}
+        </div>
+        <div
+          className="flex animate-loop-scroll whitespace-nowrap"
+          aria-hidden="true"
+        >
+          {logos.map((logo, index) => {
+            return (
+              <Image
+                src={logo}
+                alt="logo image"
+                width={409}
+                height={250}
+                key={index}
+              />
+            );
+          })}
         </div>
       </div>
     </>

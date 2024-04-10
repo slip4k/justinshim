@@ -18,6 +18,7 @@ const config: Config = {
       },
       animation: {
         blob: 'blob 20s infinite',
+        'loop-scroll': 'loop-scroll 10s linear infinite',
       },
       keyframes: {
         blob: {
@@ -33,6 +34,10 @@ const config: Config = {
           '100%': {
             transform: 'translate(0px, 0px) scale(1)',
           },
+        },
+        'loop-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
         },
       },
     },

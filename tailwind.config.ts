@@ -18,7 +18,7 @@ const config: Config = {
       },
       animation: {
         blob: 'blob 20s infinite',
-        'loop-scroll': 'loop-scroll 10s linear infinite',
+        'loop-scroll': 'loop-scroll 40s linear infinite',
       },
       keyframes: {
         blob: {

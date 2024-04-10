@@ -27,7 +27,7 @@ export default function Projects() {
         alt="Next.js logo"
       />
 
-      <h1 className="text-center sticky top-0 font-black text-6xl mb-6">
+      <h1 className="text-center sticky top-0 font-bold text-4xl mb-6">
         Projects
       </h1>
       <div className="sticky top-20">

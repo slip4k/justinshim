@@ -11,6 +11,14 @@ export default function Landing() {
     '/prismalogo.png',
     '/tailwindlogo.png',
   ];
+  const logoName = [
+    'TypeScript',
+    'Next.js',
+    'React',
+    'Git',
+    'Prisma',
+    'TailwindCSS',
+  ];
   return (
     <>
       <div className="flex flex-col items-center h-[100dvh] relative">
@@ -72,17 +80,15 @@ export default function Landing() {
           </a>
         </div>
       </div>
-      <div className="flex lg:w-[50dvw] h-full w-[100dvw] font-bold mt-2 mb-2 overflow-hidden">
-        <div className="flex animate-loop-scroll whitespace-nowrap">
+      <h1 className="font-bold text-4xl text-center mb-8">Skills</h1>
+      <div className="flex w-[4000px] h-full  font-bold mt-2 mb-2 overflow-hidden">
+        <div className="flex items-center animate-loop-scroll whitespace-nowrap">
           {logos.map((logo, index) => {
             return (
-              <Image
-                src={logo}
-                alt="logo image"
-                width={409}
-                height={250}
-                key={index}
-              />
+              <div key={index} className="mx-8">
+                <Image src={logo} alt="logo image" width={409} height={250} />
+                <p className="text-center text-xl mt-8">{logoName[index]}</p>
+              </div>
             );
           })}
         </div>
@@ -92,13 +98,10 @@ export default function Landing() {
         >
           {logos.map((logo, index) => {
             return (
-              <Image
-                src={logo}
-                alt="logo image"
-                width={409}
-                height={250}
-                key={index}
-              />
+              <div key={index} className="mx-8">
+                <Image src={logo} alt="logo image" width={409} height={250} />
+                <p className="text-center text-xl mt-8">{logoName[index]}</p>
+              </div>
             );
           })}
         </div>

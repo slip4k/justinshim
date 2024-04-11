@@ -10,7 +10,7 @@ import { AuroraBackground } from './components/ui/aurora-background';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col relative">
-      <AuroraBackground>
+      {/* <AuroraBackground> */}
         <Landing />
         <About />
         <Skills />
@@ -18,7 +18,7 @@ export default function Home() {
         <Contact />
         <Footer />
         <TopButton />
-      </AuroraBackground>
+      {/* </AuroraBackground> */}
     </main>
   );
 }

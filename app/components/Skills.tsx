@@ -1,20 +1,50 @@
+'use client';
 import Image from 'next/image';
+import { HoverEffect } from './ui/card-hover-effect';
 
-const logos = [
-  '/tscolorlogo.png',
-  '/nextcirclelogo.png',
-  '/reactcolorlogo.png',
-  '/gitlogo.png',
-  '/prismalogo.png',
-  '/tailwindlogo.png',
-];
-const logoName = [
-  'TypeScript',
-  'Next.js',
-  'React',
-  'Git',
-  'Prisma',
-  'TailwindCSS',
+const items = [
+  {
+    title: 'TypeScript',
+    description:
+      'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.',
+    link: 'https://www.typescriptlang.org/',
+    image: '/tscolorlogo.png',
+  },
+  {
+    title: 'Next.js',
+    description:
+      'A React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.',
+    link: 'https://nextjs.org/',
+    image: '/nextcirclelogo.png',
+  },
+  {
+    title: 'React',
+    description:
+      'A JavaScript library for building user interfaces, enabling the creation of reusable UI components.',
+    link: 'https://reactjs.org/',
+    image: '/reactcolorlogo.png',
+  },
+  {
+    title: 'Git',
+    description:
+      'A distributed version-control system for tracking changes in source code during software development.',
+    link: 'https://git-scm.com/',
+    image: '/gitlogo.png',
+  },
+  {
+    title: 'Prisma',
+    description:
+      'A next-generation ORM for Node.js and TypeScript, making database access easy with an auto-generated query builder for TypeScript & Node.js.',
+    link: 'https://www.prisma.io/',
+    image: '/prismalogo.png',
+  },
+  {
+    title: 'TailwindCSS',
+    description:
+      'A utility-first CSS framework for rapidly building custom designs, providing low-level utility classes to build custom designs without writing CSS.',
+    link: 'https://tailwindcss.com/',
+    image: '/tailwindlogo.png',
+  },
 ];
 
 export default function Skills() {
@@ -23,33 +53,10 @@ export default function Skills() {
       <div className="w-full mt-96 z-10">
         <h1 className="text-left text-7xl lg:text-9xl">Skills</h1>
         <hr className="border-b-4 border-foreground flex-grow" />
-        <div className="flex justify-center items-center">Hi</div>
+        <div className="flex justify-center items-center">
+          <HoverEffect items={items}></HoverEffect>
+        </div>
       </div>
-      {/* <div className="flex items-center md:w-[4000px] h-full  font-bold mt-2 mb-2 overflow-hidden">
-        <div className="flex items-center animate-loop-scroll whitespace-nowrap">
-          {logos.map((logo, index) => {
-            return (
-              <div key={index} className="mx-8">
-                <Image src={logo} alt="logo image" width={409} height={250} />
-                <p className="text-center text-xl mt-8">{logoName[index]}</p>
-              </div>
-            );
-          })}
-        </div>
-        <div
-          className="flex items-center animate-loop-scroll whitespace-nowrap"
-          aria-hidden="true"
-        >
-          {logos.map((logo, index) => {
-            return (
-              <div key={index} className="mx-8">
-                <Image src={logo} alt="logo image" width={409} height={250} />
-                <p className="text-center text-xl mt-8">{logoName[index]}</p>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
     </>
   );
 }

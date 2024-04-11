@@ -1,38 +1,76 @@
-import ProjectsCarousel from './ProjectsCarousel';
+import { Tabs } from './ui/tabs';
 import Image from 'next/image';
 
-export default function Projects() {
-  const slides = [0, 1, 2];
-  return (
-    <div id="projects" className="flex flex-col h-[1300px] mt-36 relative">
-      <Image
-        className="absolute md:left-[10dvw] top-12 filter blur-sm"
-        src="/nextlogo.png"
-        width={247}
-        height={247}
-        alt="Next.js logo"
-      />
-      <Image
-        className="absolute md:right-[10dvw] top-[500px] -right-2 filter blur-sm"
-        src="/reactlogo.png"
-        width={200}
-        height={200}
-        alt="Next.js logo"
-      />
-      <Image
-        className="absolute bottom-0 md:left-[20dvw] left-6 filter blur-sm"
-        src="/tslogo.png"
-        width={130}
-        height={130}
-        alt="Next.js logo"
-      />
+const tabs = [
+  {
+    title: 'Creator Cards',
+    value: 'creatorcards',
+    content: (
+      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-background bg-gradient-to-br from-[#1b263b] to-[#415a77]">
+        <p>Creator Cards</p>
 
-      <h1 className="text-center sticky top-0 font-bold text-4xl mb-6">
-        Projects
-      </h1>
-      <div className="sticky top-20">
-        <ProjectsCarousel slides={slides}></ProjectsCarousel>
+        <a href="#" className="h-full group relative block bg-black">
+          <Image
+            width={1920}
+            height={1080}
+            alt="A photo"
+            src="/aboutphoto.png"
+            className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+              Developer
+            </p>
+
+            <p className="text-xl font-bold text-white sm:text-2xl">
+              Tony Wayne
+            </p>
+
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                <p className="text-sm text-white">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Omnis perferendis hic asperiores quibusdam quidem voluptates
+                  doloremque reiciendis nostrum harum. Repudiandae?
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
-    </div>
+    ),
+  },
+  {
+    title: 'Next Engine Optimization',
+    value: 'neo',
+    content: (
+      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1b263b] to-[#415a77]">
+        <p>Next Engine Optimization</p>
+      </div>
+    ),
+  },
+  {
+    title: 'Body X Chiro',
+    value: 'bodyxchiro',
+    content: (
+      <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-[#1b263b] to-[#415a77]">
+        <p>Body X Chiro</p>
+      </div>
+    ),
+  },
+];
+
+export default function Projects() {
+  return (
+    <>
+      <div className="w-full h-full mt-96 z-10">
+        <h1 className="text-left text-7xl lg:text-9xl">Projects</h1>
+        <hr className="border-b-4 border-foreground flex-grow" />
+        <div className="mt-8">
+          <Tabs tabs={tabs}></Tabs>
+        </div>
+      </div>
+    </>
   );
 }

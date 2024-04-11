@@ -10,7 +10,7 @@ export default function About() {
         <div className="w-full flex flex-col lg:grid lg:grid-cols-2 justify-center items-center">
           <div className="flex flex-col items-center lg:items-start text-xl font-light mb-8 lg:mb-0 pl-8">
             <div>
-              Hello! I&apos;m Justin, a product-centric developer with a passion
+              Hi! I&apos;m Justin, a product-centric developer with a passion
               for building applications that are not only aesthetic and
               functional but also easily scalable. With a background in
               open-source, my contributions have enhanced the Next.js ecosystem
@@ -28,11 +28,10 @@ export default function About() {
             </div>
             <br />
             <div className="mt-8">
-              My expertise spans Next.js, TypeScript, React, Node, and Tailwind
-              CSS, enabling me to engineer products that not only meet user
-              needs but also adapt to evolving technological landscapes. Join me
-              on my journey as I continue to build solutions where functionality
-              meets innovation.
+              I have quite a few hobbies, but I mainly spend my leisure time
+              going to the gym, networking, or competitive eSports. Currently,
+              I&apos;m training to run the OC half marathon in May! Wish me luck
+              :).
             </div>
             <button className="flex items-center justify-center p-4 mt-8 bg-foreground text-background rounded-full w-full lg:w-48">
               Resume

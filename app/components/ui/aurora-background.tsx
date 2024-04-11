@@ -17,7 +17,7 @@ export const AuroraBackground = ({
     <main>
       <div
         className={cn(
-          'relative flex flex-col px-2  h-full items-center justify-center bg-background text-foreground transition-bg',
+          'relative transform-gpu flex flex-col px-4  h-full items-center justify-center bg-background text-foreground transition-bg',
           className
         )}
         {...props}
@@ -26,7 +26,7 @@ export const AuroraBackground = ({
           <div
             //   I'm sorry but this is what peak developer performance looks like // trigger warning
             className={cn(
-              ` transform-gpu
+              `
             [--white-gradient:repeating-linear-gradient(100deg,var(--white)_0%,var(--white)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--white)_16%)]
             [--dark-gradient:repeating-linear-gradient(100deg,var(--black)_0%,var(--black)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--black)_16%)]
             [--aurora:repeating-linear-gradient(100deg,var(--blue-500)_10%,var(--indigo-300)_15%,var(--blue-300)_20%,var(--violet-200)_25%,var(--blue-400)_30%)]

@@ -71,7 +71,9 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block text-foreground">{tab.title}</span>
+            <span className="relative block text-foreground text-medium text-xl">
+              {tab.title}
+            </span>
           </button>
         ))}
       </div>

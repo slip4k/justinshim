@@ -4,14 +4,14 @@ import Image from 'next/image';
 export default function Contact() {
   return (
     <>
+      <div className="w-full h-full mt-96 z-10">
+        <h1 className="text-left text-7xl lg:text-9xl">Contact</h1>
+        <hr className="border-b-4 border-foreground flex-grow" />
+      </div>
       <div
         id="contact"
         className="flex flex-col h-[800px] pt-16 mt-24 relative"
       >
-        {/* <div className="absolute top-48 -z-10 -left-6 w-60 h-60 bg-[#34a0a4] rounded-full mix-blend-multiply filter blur-2xl opacity-50 transform-gpu animate-blob"></div>
-      <div className="absolute bottom-12 -z-10 -left-4 w-72 h-72 bg-[#52b69a] rounded-full mix-blend-multiply filter blur-2xl opacity-50 transform-gpu animate-blob"></div>
-      <div className="absolute top-72 -z-10 -right-4 w-60 h-60 bg-[#168aad] rounded-full mix-blend-multiply filter blur-2xl opacity-50 transform-gpu animate-blob"></div> */}
-        <h1 className="font-black text-6xl text-center">Contact</h1>
         <div className="flex flex-col justify-center items-center">
           <p className=" w-[80dvw] text-center text-2xl font-light mt-10">
             {' '}

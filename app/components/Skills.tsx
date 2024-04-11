@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { HoverEffect } from './ui/card-hover-effect';
 
 const items = [

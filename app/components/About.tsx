@@ -3,7 +3,7 @@ import { ArrowUpRightIcon } from 'lucide-react';
 
 export default function About() {
   return (
-    <div className="w-full mt-96 z-10">
+    <div id="about" className="w-full mt-36 lg:mt-96 z-10">
       <h1 className="text-left text-7xl lg:text-9xl">About</h1>
       <hr className="border-b-4 border-foreground flex-grow" />
       <div className="flex justify-center items-center">
@@ -33,10 +33,15 @@ export default function About() {
               I&apos;m training to run the OC half marathon in May! Wish me luck
               :).
             </div>
-            <button className="flex items-center justify-center p-4 mt-8 bg-foreground text-background rounded-full w-full lg:w-48">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:bg-slate-400 flex items-center justify-center p-4 mt-8 bg-foreground text-background rounded-full w-full lg:w-48"
+            >
               Resume
               <ArrowUpRightIcon></ArrowUpRightIcon>
-            </button>
+            </a>
           </div>
           <div className="p-2 lg:ml-16 flex justify-center border-foreground">
             <article className="h-3/4">

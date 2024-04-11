@@ -49,7 +49,7 @@ const items = [
 export default function Skills() {
   return (
     <>
-      <div className="w-full mt-96 z-10">
+      <div id='skills' className="w-full mt-36 lg:mt-96 z-10">
         <h1 className="text-left text-7xl lg:text-9xl">Skills</h1>
         <hr className="border-b-4 border-foreground flex-grow" />
         <div className="flex justify-center items-center">

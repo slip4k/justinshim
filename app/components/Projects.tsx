@@ -99,9 +99,9 @@ const tabs = [
                 Next Engine Optimization
               </h3>
             </a>
-            <p className="mt-2 text-sm/relaxed text-gray-500 mb-4">
+            <p className="mt-2 text-xs md:text-sm/relaxed text-gray-500 mb-4">
               Next Engine Optimization (NEO) is a vsCode extension that delivers
-              SEO metrics such as the hydration time of any given page in their
+              SEO metrics on content load times of any given page in their
               Next.js application.
             </p>
             <a
@@ -170,7 +170,7 @@ const tabs = [
               <h3 className="mt-0.5 text-lg text-gray-900">Body X Chiro</h3>
             </a>
 
-            <p className="mt-2 text-sm/relaxed text-gray-500 mb-4">
+            <p className="mt-2 text-xs md:text-sm/relaxed text-gray-500 mb-4">
               Body X Chiro is a Chiropractic office run by Dr. Christine Huynh,
               and I had the pleasure of designing and developing the website for
               the practice.
@@ -225,7 +225,7 @@ const tabs = [
 
 export default function Projects() {
   return (
-    <div className="w-full h-full mt-96 z-10 mb-[600px]">
+    <div id="projects" className="w-full h-full mt-36 lg:mt-96 z-10 mb-[30rem]">
       <h1 className="text-left text-7xl lg:text-9xl">Projects</h1>
       <hr className="border-b-4 border-foreground flex-grow" />
       <div className="mt-8">

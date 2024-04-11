@@ -19,6 +19,26 @@ export default function NavBar() {
     };
   }, []);
 
+  const scrollToBottom = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: 'smooth', // Optional: defines the transition animation
+        block: 'start', // Optional: aligns the element at the top of the view
+      });
+    }
+  };
+
+  const scrollTo = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth', // Optional: defines the transition animation
+        block: 'start', // Optional: aligns the element at the top of the view
+      });
+    }
+  };
+
   return (
     <nav className="flex p-2 justify-between items-center rounded-full w-full mb-8 bg-foreground z-10 mt-4 drop-shadow-md">
       <div className="font-black text-5xl ml-8 text-background">js</div>
@@ -40,28 +60,76 @@ export default function NavBar() {
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
                 className={`absolute z-20 w-48 flex flex-col items-center justify-between top-8 right-8 bg-background p-4 border rounded-lg text-xl font-semibold`}
               >
-                <a
+                <button
                   className="hover:scale-105 mt-4 text-foreground"
-                  href="#projects"
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    scrollTo('about');
+                    setOpen(false);
+                  }}
+                >
+                  About
+                </button>
+                <button
+                  className="hover:scale-105 mt-4 text-foreground"
+                  onClick={() => {
+                    scrollTo('skills');
+                    setOpen(false);
+                  }}
+                >
+                  Skills
+                </button>
+                <button
+                  className="hover:scale-105 mt-4 text-foreground"
+                  onClick={() => {
+                    scrollTo('projects');
+                    setOpen(false);
+                  }}
                 >
                   Projects
-                </a>
-                <a
-                  className="hover:scale-105 bg-foreground text-background p-2 rounded-lg mt-4"
-                  href="#contact"
-                  onClick={() => setOpen(false)}
+                </button>
+                <button
+                  className="hover:scale-105 bg-foreground text-background p-2 rounded-lg mt-4 mb-4"
+                  onClick={() => {
+                    scrollTo('contact');
+                    setOpen(false);
+                  }}
                 >
                   Contact Me
-                </a>
+                </button>
               </motion.div>
             )}
           </AnimatePresence>
         </div>
         <div className="hidden md:block">
-          <button className="text-background ">Skills</button>
-          <button className="text-background mx-12">Projects</button>
-          <button className="rounded-full bg-background text-foreground p-6">
+          <a
+            href="/resume.pdf"
+            className="text-background mr-12 hover:underline"
+          >
+            Resume
+          </a>
+          <button
+            onClick={() => scrollTo('about')}
+            className="text-background mr-12 hover:underline"
+          >
+            About
+          </button>
+          <button
+            onClick={() => scrollTo('skills')}
+            className="text-background mr-12 hover:underline"
+          >
+            Skills
+          </button>
+          <button
+            onClick={() => scrollTo('projects')}
+            className="text-background mr-12 hover:underline"
+          >
+            Projects
+          </button>
+
+          <button
+            onClick={() => scrollTo('contact')}
+            className="rounded-full bg-background text-foreground p-6 hover:bg-slate-300"
+          >
             Contact Me
           </button>
         </div>

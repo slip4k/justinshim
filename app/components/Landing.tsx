@@ -5,7 +5,7 @@ import { AuroraBackground } from './ui/aurora-background';
 
 export default function Landing() {
   return (
-    <div className="flex flex-col items-center w-full h-[1000px] relative">
+    <div className="flex flex-col items-center w-full h-[1000px] z-10">
       <NavBar />
       <div className="flex flex-col items-center text-center w-full">
         <h2 className="font-light text-5xl lg:text-7xl drop-shadow-md">
@@ -57,20 +57,6 @@ export default function Landing() {
           </a>
         </div>
       </div>
-      {/* <div className="flex w-[60dvw] justify-between sm:justify-evenly md:justify-center md:gap-x-6 ml-6 my-6">
-        <a
-          href="#projects"
-          className="bg-black text-white rounded-3xl py-2 px-4"
-        >
-          Projects
-        </a>
-        <a
-          href="#contact"
-          className="bg-black text-white rounded-3xl py-2 px-4"
-        >
-          Contact Me
-        </a>
-      </div> */}
     </div>
   );
 }

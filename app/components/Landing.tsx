@@ -3,35 +3,10 @@ import Image from 'next/image';
 import Typewriter from './Typewriter';
 
 export default function Landing() {
-  const logos = [
-    '/tscolorlogo.png',
-    '/nextcirclelogo.png',
-    '/reactcolorlogo.png',
-    '/gitlogo.png',
-    '/prismalogo.png',
-    '/tailwindlogo.png',
-  ];
-  const logoName = [
-    'TypeScript',
-    'Next.js',
-    'React',
-    'Git',
-    'Prisma',
-    'TailwindCSS',
-  ];
   return (
     <>
       <div className="flex flex-col items-center h-[100dvh] relative">
         <NavBar />
-        <div className="transform-gpu absolute top-12 md:top-24 -z-10 sm:left-[40dvw] left-4 w-80 h-80 bg-[#00539CFF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
-        <div className="transform-gpu absolute bottom-56 md:bottom-72 -z-10 sm:left-[40dvw] left-4 w-72 h-72 bg-[#FFD662FF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
-        <Image
-          className="rounded-full shadow-lg border-2 mt-12 mb-6 -z-10"
-          src="/headshot.jpg"
-          width={230}
-          height={230}
-          alt="Headshot of Justin Shim"
-        />
         <div className="flex flex-col text-center w-full lg:w-[30dvw]">
           <h2 className="font-extrabold text-4xl drop-shadow-md">
             Justin Shim
@@ -44,6 +19,16 @@ export default function Landing() {
             functionality, and scalability
           </p>
         </div>
+        {/* <div className="transform-gpu absolute top-12 md:top-24 -z-10 sm:left-[40dvw] left-4 w-80 h-80 bg-[#00539CFF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div>
+        <div className="transform-gpu absolute bottom-56 md:bottom-72 -z-10 sm:left-[40dvw] left-4 w-72 h-72 bg-[#FFD662FF] rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-blob"></div> */}
+        <Image
+          className="rounded-full shadow-lg border-2 mt-12 mb-6 -z-10"
+          src="/headshot.jpg"
+          width={230}
+          height={230}
+          alt="Headshot of Justin Shim"
+        />
+
         <div className="flex w-[60dvw] justify-between sm:justify-evenly md:justify-center md:gap-x-6 ml-6 my-6">
           <a
             href="#projects"
@@ -81,31 +66,6 @@ export default function Landing() {
         </div>
       </div>
       <h1 className="font-bold text-4xl text-center mb-8">Skills</h1>
-      <div className="flex items-center md:w-[4000px] h-full  font-bold mt-2 mb-2 overflow-hidden">
-        <div className="flex items-center animate-loop-scroll whitespace-nowrap">
-          {logos.map((logo, index) => {
-            return (
-              <div key={index} className="mx-8">
-                <Image src={logo} alt="logo image" width={409} height={250} />
-                <p className="text-center text-xl mt-8">{logoName[index]}</p>
-              </div>
-            );
-          })}
-        </div>
-        <div
-          className="flex items-center animate-loop-scroll whitespace-nowrap"
-          aria-hidden="true"
-        >
-          {logos.map((logo, index) => {
-            return (
-              <div key={index} className="mx-8">
-                <Image src={logo} alt="logo image" width={409} height={250} />
-                <p className="text-center text-xl mt-8">{logoName[index]}</p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
     </>
   );
 }

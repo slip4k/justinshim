@@ -14,6 +14,9 @@
     rgb(var(--color-middle)),
     rgb(var(--color-side))
   );
+  --background: 224, 225, 221;
+  --foreground: 13, 27, 42;
+  --accent: 65, 90, 119;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,12 +24,15 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --background: 224, 225, 221;
+    --foreground: 13, 27, 42;
+    --accent: 65, 90, 119;
   }
 }
 
 body {
   /* color: rgb(var(--foreground-rgb)); */
-  background: var(--background-gradient);
+  background: #e0e1dd;
   overflow-x: hidden;
 }
 

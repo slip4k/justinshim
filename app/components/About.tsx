@@ -8,7 +8,7 @@ export default function About() {
       <hr className="border-b-4 border-foreground flex-grow" />
       <div className="flex justify-center items-center">
         <div className="w-full flex flex-col lg:grid lg:grid-cols-2 justify-center items-center">
-          <div className="flex flex-col items-center lg:items-start text-xl font-light mb-8 lg:mb-0 lg:pl-8">
+          <div className="flex flex-col items-center lg:items-start text-md lg:text-xl lg:font-light mb-8 lg:mb-0 lg:pl-8">
             <div className="mt-8  xl:mt-0">
               Hi! I&apos;m Justin, a product-centric developer with a passion
               for building applications that are not only aesthetic and
@@ -19,10 +19,9 @@ export default function About() {
             </div>
             <br />
             <div className="mt-8">
-              Currently, I&apos;m spearheading Creator Cards — a no-code
-              platform designed for influencers to effortlessly craft landing
-              pages, retrieve analytics, and provide an all-in-one solution to
-              content management. Creator Cards aims to provide deep
+              Currently, I&apos;m leading Creator Cards — a no-code platform
+              designed for influencers to effortlessly craft landing pages, get
+              analytics, and more. Creator Cards aims to provide deep
               customization without sacrificing accessibility embodying my
               commitment to delivering user-focused and data-driven solutions.
             </div>

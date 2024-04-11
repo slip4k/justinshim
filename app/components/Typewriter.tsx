@@ -19,7 +19,7 @@ export default function Typewriter() {
       style={{
         display: 'inline-block',
         padding: '10px',
-        backgroundImage: 'linear-gradient(to right, #304BFF, #00CDAC)',
+        backgroundImage: 'linear-gradient(to bottom right, #304BFF, #00CDAC)',
         WebkitBackgroundClip: 'text', // For Safari
         backgroundClip: 'text',
         color: 'transparent',

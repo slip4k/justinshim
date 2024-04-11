@@ -62,6 +62,7 @@ const config: Config = {
   },
   plugins: [addVariablesForColors],
 };
+
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme('colors'));
   let newVars = Object.fromEntries(
@@ -72,4 +73,5 @@ function addVariablesForColors({ addBase, theme }: any) {
     ':root': newVars,
   });
 }
+
 export default config;

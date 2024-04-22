@@ -60,6 +60,12 @@ export default function NavBar() {
                 transition={{ duration: 0.3, ease: 'easeInOut' }}
                 className={`absolute z-20 w-48 flex flex-col items-center justify-between top-8 right-8 bg-background p-4 border rounded-lg text-xl font-semibold`}
               >
+                <a
+                  href="/resume.pdf"
+                  className="hover:scale-105 mt-4 text-foreground"
+                >
+                  Resume
+                </a>
                 <button
                   className="hover:scale-105 mt-4 text-foreground"
                   onClick={() => {
